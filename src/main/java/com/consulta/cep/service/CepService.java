@@ -7,5 +7,5 @@ import org.springframework.stereotype.Service;
 import java.io.IOException;
 
 public interface CepService {
-    String consultaCep(CepRequest cep) throws IOException, Exception;
+	CepResponseDTO consultaCep(CepRequest cep) throws IOException, Exception;
 }

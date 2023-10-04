@@ -22,7 +22,7 @@ public class CepController {
     }
 
     @GetMapping(value = "/")
-    public ResponseEntity<String> consultaCep(@RequestBody CepRequest request) throws Exception {
+    public ResponseEntity<CepResponseDTO> consultaCep(@RequestBody CepRequest request) throws Exception {
         var cep = cepService.consultaCep(request);
         return ResponseEntity.ok().body(cep);
     }
